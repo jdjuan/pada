@@ -1,0 +1,112 @@
+@import '~src/styles.scss';
+
+section.container {
+  text-align: center;
+
+  p.smaller {
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+
+  p.accent {
+    font-weight: 600;
+  }
+
+  header {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+  }
+
+  section.description {
+    margin: 1rem;
+  }
+
+  section.content {
+    div.row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+    }
+
+    div.card {
+      max-width: 22rem;
+      margin: 1.2rem 0.4rem;
+      border-radius: 10px;
+      height: 17rem;
+      padding: 1rem;
+      box-shadow: 3px 3px 11px 0px #25283d38;
+
+      p {
+        margin: 1rem 0.4rem;
+      }
+
+      div.header {
+        margin: 0rem 0.5rem;
+
+        h3 {
+          margin: 0.8rem 0 0 0;
+          font-size: 1.5rem;
+          font-weight: 800;
+        }
+      }
+
+      div.content {
+        margin: 0rem 0.1rem;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: right;
+  margin: 0.5rem 0;
+
+  a.creator {
+    font-weight: 600;
+
+    &:active,
+    &:visited,
+    &:link {
+      color: $primary;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  section.container {
+    header {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+
+    p.smaller {
+      font-size: 1.7rem;
+    }
+
+    p.accent {
+      font-size: 1.3rem;
+    }
+
+    section.content {
+      div.card {
+        // margin: 1.2rem auto;
+
+        p {
+          font-size: 1.3rem;
+        }
+
+        div.header {
+          h3 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

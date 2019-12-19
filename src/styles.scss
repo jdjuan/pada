@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+$primary: #616161; // text
+// $primary: #EFD9CE;
+$secondary: #25283D; // boxes
+$accent: white; //background
+// $accent: #25283D; //background
+
+
+body {
+  color: $primary;
+  background-color: $accent;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+}
