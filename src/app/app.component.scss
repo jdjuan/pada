@@ -85,11 +85,12 @@ section.container {
 
 footer {
   text-align: right;
-  margin: 0.5rem 0;
+  position: absolute;
+  right: 8px;
+  bottom: 7px;
 
   a.creator {
-    font-weight: 600;
-
+    font-weight: bold;
     &:active,
     &:visited,
     &:link {
@@ -98,5 +99,69 @@ footer {
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 1040px) {
+  section.container {
+    section.content {
+      .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+      }
+    }
+  }
+
+  footer {
+    position: static;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  section.container {
+    header {
+      .title {
+      }
+      .subtitle {
+        font-size: 12px;
+      }
+      .tagline {
+        font-size: 14px;
+        margin: 20px 0px 0px 0px;
+        padding: 7px 17px;
+      }
+    }
+
+    section.content {
+      .row {
+        .card {
+          margin: 3rem 5px 0rem 5px;
+          height: 16rem;
+          width: 22rem;
+          .card-header {
+            font-size: 26px;
+            padding: 18px;
+          }
+          .card-content {
+            margin: 0rem 15px;
+            .summary {
+              margin: 13px 0;
+              font-size: 14px;
+              padding: 4px 5px;
+            }
+            .description {
+              font-size: 14px;
+            }
+            .benefits {
+              font-size: 12px;
+            }
+            .corner {
+            }
+          }
+        }
+      }
+    }
+  }
 }
