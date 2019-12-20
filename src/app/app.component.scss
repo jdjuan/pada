@@ -65,6 +65,14 @@ section.container {
             font-size: 1rem;
             text-align: left;
           }
+          .benefits .check {
+            display: inline-block;
+            transform: rotate(45deg);
+            height: 8px;
+            width: 4px;
+            border-bottom: 3px solid violet;
+            border-right: 3px solid violet;
+          }
           .corner {
             display: inline-block;
             position: absolute;
