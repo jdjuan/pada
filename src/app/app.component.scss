@@ -1,64 +1,83 @@
 @import "~src/styles.scss";
 
 section.container {
-  text-align: center;
-
-  p.smaller {
-    font-weight: 100;
-    font-size: 0.8rem;
-  }
-
   header {
-    h1 {
-      font-size: 2.5rem;
+    text-align: center;
+    .title {
+      font-size: 3.8rem;
       font-weight: 800;
     }
-  }
-  .tagline {
-    margin: 1rem;
-    color: white;
-    font-size: 19px;
-    border-radius: 7px;
-    display: inline-block;
-    background-image: linear-gradient(90deg, #1300ff, #c81bd5);
-    background-image: linear-gradient(90deg, #168be8, #70b9f3);
-    padding: 7px 19px;
+    .subtitle {
+      font-weight: 100;
+      font-size: 1rem;
+    }
+    .tagline {
+      margin: 1rem;
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 7px;
+      display: inline-block;
+      background-image: linear-gradient(90deg, #168be8, #70b9f3);
+      padding: 7px 19px;
+    }
   }
 
   section.content {
-    div.row {
+    .row {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: stretch;
       align-content: stretch;
-    }
-
-    div.card {
-      max-width: 22rem;
-      margin: 1.2rem 1.4rem;
-      border-radius: 10px;
-      height: 17rem;
-
-      box-shadow: 3px 3px 11px 0px #25283d38;
-
-      p {
-        margin: 1rem 0.4rem;
-      }
-
-      div.header {
-        margin: 0rem 0.5rem;
-
-        h3 {
-          margin: 0.8rem 0 0 0;
-          font-size: 1.5rem;
+      .card {
+        position: relative;
+        max-width: 29rem;
+        margin: 1.2rem 1.4rem;
+        border-radius: 10px;
+        height: 17rem;
+        box-shadow: 3px 3px 11px 0px #25283d38;
+        .card-header {
+          margin: 0;
           font-weight: 800;
+          margin: 0;
+          background-color: violet;
+          color: white;
+          margin: 0;
+          font-size: 2rem;
+          padding: 15px;
+          border-radius: 10px 10px 0 0;
         }
-      }
-
-      div.card-description {
-        margin: 0rem 1.1rem;
+        .card-content {
+          margin: 0rem 1.1rem;
+          text-align: left;
+          .summary {
+            font-size: 18px;
+            background-color: #f9a3ff;
+            background-color: #ee82ecbd;
+            color: white;
+            border-radius: 7px;
+            padding: 4px 14px;
+            display: inline-block;
+            margin: 1rem 0rem;
+          }
+          .description {
+            font-size: 1rem;
+            text-align: left;
+          }
+          .corner {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(90deg, #168be8, #70b9f3);
+            color: white;
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 7px;
+            border-radius: 10px 0px 10px 0px;
+          }
+        }
       }
     }
   }
@@ -80,62 +99,4 @@ footer {
 }
 
 @media (min-width: 600px) {
-  section.container {
-    header {
-      h1 {
-        font-size: 3.5rem;
-      }
-    }
-
-    p.smaller {
-      font-size: 1rem;
-    }
-
-    p.accent {
-      font-size: 2rem;
-    }
-
-    section.content {
-      div.card {
-        // margin: 1.2rem auto;
-
-        p {
-          font-size: 1.3rem;
-        }
-
-        p.smaller {
-          font-size: 1rem;
-          text-align: left;
-        }
-
-        div.header {
-          margin: 0;
-          h3 {
-            // background-image: linear-gradient(90deg, #1300ff, #c81bd5)
-            // background-color: #cc1ed9;
-            background-color: violet;
-            // background-image: linear-gradient(90deg, darkviolet, violet);
-            color: white;
-            margin: 0;
-            font-size: 30px;
-            padding: 15px;
-            border-radius: 10px 10px 0 0;
-          }
-          p {
-            font-size: 18px;
-            font-style: italic;
-            margin: 13px;
-            background-color: blueviolet;
-            background-color: violet;
-            background-color: #f9a3ff;
-            color: white;
-            border-radius: 7px;
-            padding: 4px 14px;
-            display: inline-block;
-            margin-bottom: 0px;
-          }
-        }
-      }
-    }
-  }
 }
