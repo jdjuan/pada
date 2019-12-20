@@ -1,4 +1,4 @@
-@import '~src/styles.scss';
+@import "~src/styles.scss";
 
 section.container {
   text-align: center;
@@ -8,19 +8,21 @@ section.container {
     font-size: 0.8rem;
   }
 
-  p.accent {
-    font-weight: 600;
-  }
-
   header {
     h1 {
       font-size: 2.5rem;
       font-weight: 800;
     }
   }
-
-  section.description {
+  .tagline {
     margin: 1rem;
+    color: white;
+    font-size: 19px;
+    border-radius: 7px;
+    display: inline-block;
+    background-image: linear-gradient(90deg, #1300ff, #c81bd5);
+    background-image: linear-gradient(90deg, #168be8, #70b9f3);
+    padding: 7px 19px;
   }
 
   section.content {
@@ -35,10 +37,10 @@ section.container {
 
     div.card {
       max-width: 22rem;
-      margin: 1.2rem 0.4rem;
+      margin: 1.2rem 1.4rem;
       border-radius: 10px;
       height: 17rem;
-      padding: 1rem;
+
       box-shadow: 3px 3px 11px 0px #25283d38;
 
       p {
@@ -55,8 +57,8 @@ section.container {
         }
       }
 
-      div.content {
-        margin: 0rem 0.1rem;
+      div.card-description {
+        margin: 0rem 1.1rem;
       }
     }
   }
@@ -86,11 +88,11 @@ footer {
     }
 
     p.smaller {
-      font-size: 1.7rem;
+      font-size: 1rem;
     }
 
     p.accent {
-      font-size: 1.3rem;
+      font-size: 2rem;
     }
 
     section.content {
@@ -101,9 +103,36 @@ footer {
           font-size: 1.3rem;
         }
 
+        p.smaller {
+          font-size: 1rem;
+          text-align: left;
+        }
+
         div.header {
+          margin: 0;
           h3 {
-            font-size: 2rem;
+            // background-image: linear-gradient(90deg, #1300ff, #c81bd5)
+            // background-color: #cc1ed9;
+            background-color: violet;
+            // background-image: linear-gradient(90deg, darkviolet, violet);
+            color: white;
+            margin: 0;
+            font-size: 30px;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+          }
+          p {
+            font-size: 18px;
+            font-style: italic;
+            margin: 13px;
+            background-color: blueviolet;
+            background-color: violet;
+            background-color: #f9a3ff;
+            color: white;
+            border-radius: 7px;
+            padding: 4px 14px;
+            display: inline-block;
+            margin-bottom: 0px;
           }
         }
       }
