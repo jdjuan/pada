@@ -1,7 +1,7 @@
 :host {
   display: grid;
   grid-template-columns: auto;
-  margin: 1rem calc(20rem / 30%);
+  margin: 1rem 15%;
 }
 
 .card {
@@ -30,11 +30,11 @@
       border-radius: 7px;
       padding: 4px 14px;
       display: inline-block;
-      margin: 1rem 0rem;
+      margin: 26px 0rem 9px 0;
     }
     .description {
       font-size: 1rem;
-      text-align: left;
+      margin-bottom: 9px;
     }
     .benefits {
       font-size: 1rem;
@@ -79,11 +79,11 @@
       margin: 0rem 15px;
       .summary {
         margin: 13px 0;
-        font-size: 14px;
-        padding: 4px 5px;
+        font-size: 16px;
+        padding: 4px 10px;
       }
       .description {
-        font-size: 14px;
+        font-size: 12px;
       }
       .benefits {
         font-size: 12px;
