@@ -1,18 +1,19 @@
 :host {
   display: grid;
   grid-template-columns: auto;
-  margin: 0 15%;
+  margin: 1rem calc(20rem / 30%);
 }
 
 .card {
   position: relative;
   border-radius: 10px;
   box-shadow: 3px 3px 11px 0px #25283d38;
+  padding-bottom: 1rem;
   .card-header {
     margin: 0;
     font-weight: normal;
     margin: 0;
-    background-color: violet;
+    background-color: #168be8;
     color: white;
     margin: 0;
     font-size: 2rem;
@@ -22,12 +23,9 @@
   .card-content {
     margin: 0rem 1.1rem;
     text-align: left;
-    display: grid;
-    grid-template-columns: auto auto;
     .summary {
       font-size: 18px;
-      background-color: #f9a3ff;
-      background-color: #ee82ecbd;
+      background-color: #70b9f3;
       color: white;
       border-radius: 7px;
       padding: 4px 14px;
@@ -39,14 +37,15 @@
       text-align: left;
     }
     .benefits {
+      font-size: 1rem;
       margin-top: 5px;
       .check {
         display: inline-block;
         transform: rotate(45deg);
         height: 8px;
         width: 4px;
-        border-bottom: 3px solid violet;
-        border-right: 3px solid violet;
+        border-bottom: 3px solid #70b9f3;
+        border-right: 3px solid #70b9f3;
       }
     }
     .corner {
@@ -72,7 +71,6 @@
 
 @media (max-width: 540px) {
   .card {
-    height: 15rem;
     .card-header {
       font-size: 26px;
       padding: 18px;

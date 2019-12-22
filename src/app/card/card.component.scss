@@ -19,7 +19,6 @@
     text-align: left;
     .summary {
       font-size: 18px;
-      background-color: #f9a3ff;
       background-color: #ee82ecbd;
       color: white;
       border-radius: 7px;
@@ -38,8 +37,8 @@
         transform: rotate(45deg);
         height: 8px;
         width: 4px;
-        border-bottom: 3px solid violet;
-        border-right: 3px solid violet;
+        border-bottom: 3px solid #ee82ecbd;
+        border-right: 3px solid #ee82ecbd;
       }
     }
     .corner {
