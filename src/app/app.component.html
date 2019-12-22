@@ -7,74 +7,15 @@
     </section>
   </header>
   <section class="content">
-    <div class="row">
-      <div class="card">
-        <h3 class="card-header">1.Purpose</h3>
-        <div class="card-content">
-          <p class="summary">What is the expected outcome?</p>
-          <p class="description">
-            Provide a succinct goal that outlines the expectations of the meeting.
-          </p><br>
-          <div class="benefits">
-            <div class="check"></div> Keeps participants aligned
-          </div>
-          <div class="benefits">
-            <div class="check"></div> Avoids irrelevant discussions
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <h3 class="card-header">2.Agenda</h3>
-        <div class="card-content">
-          <p class="summary">How should the time be allocated?</p>
-          <p class="description">
-            List the steps required to achieve the goal of the meeting.
-          </p><br>
-          <div class="benefits">
-            <div class="check"></div> Ensures the meeting remain in order
-          </div>
-          <div class="benefits">
-            <div class="check"></div> Helps participants stay on point
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card">
-        <h3 class="card-header">3.Documents</h3>
-        <div class="card-content">
-          <p class="summary">Can you share information in advance?</p>
-          <p class="description">
-            Add attachments that can provide some context for the participants.
-          </p><br>
-          <div class="benefits">
-            <div class="check"></div> Saves time on introductions
-          </div>
-          <div class="benefits">
-            <div class="check"></div> Makes meetings more productive
-          </div>
-          <p class="corner">Optional</p>
-        </div>
-      </div>
-      <div class="card">
-        <h3 class="card-header">4.Actions</h3>
-        <div class="card-content">
-          <p class="summary">Should participants bring ideas?</p>
-          <p class="description">
-            Ask participants to bring suggestions for the matter to be discussed.
-          </p><br>
-          <div class="benefits">
-            <div class="check"></div> Helps avoid group biases
-          </div>
-          <div class="benefits">
-            <div class="check"></div> Involves participants actively
-          </div>
-          <p class="corner">Optional</p>
-        </div>
-      </div>
-    </div>
+    <app-card *ngFor="let step of steps"
+      [title]="step.title"
+      [summary]="step.summary"
+      [description]="step.description"
+      [benefits]="step.benefits"
+      [optional]="step.optional"></app-card>
   </section>
 </section><br><br>
+<app-example></app-example>
 <footer>
   Made with 💙 by
   <a class="creator"

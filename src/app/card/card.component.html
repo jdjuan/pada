@@ -1,0 +1,13 @@
+<div class="card">
+  <h3 class="card-header">{{title}}</h3>
+  <div class="card-content">
+    <p class="summary">{{summary}}</p>
+    <p class="description">{{description}}</p><br>
+    <div class="benefits"
+      *ngFor="let benefit of benefits">
+      <div class="check"></div> {{benefit}}
+    </div>
+    <p *ngIf="optional"
+      class="corner">Optional</p>
+  </div>
+</div>
